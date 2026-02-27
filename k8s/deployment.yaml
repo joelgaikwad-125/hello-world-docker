@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: nginx
-          image: joelgaikwad/hello-nginx-harness:<+pipeline.sequenceId>
+          image: <+artifacts.primary.image>
           imagePullPolicy: Always
           ports:
             - containerPort: 80
